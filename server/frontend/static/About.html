@@ -2,21 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Cars Dealership</title>
+    <title>Dealerships - Car Dealerships</title>
     <link rel="stylesheet" href="/static/style.css">
-    <style>
-        .profile-card { text-align: center; margin: 20px; font-family: Arial, sans-serif; }
-        .profile-card img { width: 150px; height: 150px; border-radius: 50%; }
-    </style>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <body>
-    <div class="profile-card">
-        <h1>About Us</h1>
-        <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Profile Picture">
-        <h2>Trần Phạm Duy Tân</h2>
-        <h3>Role: Full-Stack Developer</h3>
-        <p>Details: Passionate about Data Science, AI, and Web Development. Dedicated to building responsive and scalable applications.</p>
-        <p>Email: tan@example.com</p>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bcd4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Dealerships</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/static/About.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/static/Contact.html">Contact Us</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="#" style="color: black; text-decoration: none;">Login</a>
+                    <a href="#" style="color: black; text-decoration: none; margin-left: 10px;">Register</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Dealerships</h2>
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Zip</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Holdlamis Car Dealership</td>
+                    <td>El Paso</td>
+                    <td>30776 Old Shore Court</td>
+                    <td>79936</td>
+                    <td>Texas</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Temp Car Dealership</td>
+                    <td>Minneapolis</td>
+                    <td>7089 Corry Lane</td>
+                    <td>55442</td>
+                    <td>Minnesota</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
-</html>
+</html> 
