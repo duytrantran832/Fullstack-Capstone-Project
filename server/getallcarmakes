@@ -1,0 +1,2 @@
+curl http://127.0.0.1:8000/djangoapp/get_cars
+[{"CarMake": "Toyota", "CarModel": "Camry"}, {"CarMake": "Honda", "CarModel": "Civic"}, {"CarMake": "Ford", "CarModel": "Mustang"}]
