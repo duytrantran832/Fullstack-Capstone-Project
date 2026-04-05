@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dealers in Kansas</title>
+    <title>Dealer Details & Reviews</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
@@ -12,18 +12,44 @@
             <a class="navbar-brand" href="/">Dealerships</a>
         </div>
     </nav>
+
     <div class="container mt-5">
-        <h2 class="mb-4">Dealerships in Kansas</h2>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
-                <tr><th>ID</th><th>Name</th><th>City</th><th>State</th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>3</td><td>Kansas Car Dealership</td><td>Wichita</td><td>Kansas</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="card mb-4 border-info">
+            <div class="card-header bg-info text-white">
+                <h3 class="mb-0">Holdlamis Car Dealership</h3>
+            </div>
+            <div class="card-body">
+                <p class="mb-1"><strong>Address:</strong> 30776 Old Shore Court, El Paso, Texas</p>
+                <p><strong>Zip Code:</strong> 79936</p>
+            </div>
+        </div>
+
+        <h4 class="mb-3 text-primary">Customer Reviews</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Berkly Ryan</h5>
+                        <p class="card-text italic">"Excellent service and friendly staff! Highly recommended for anyone looking for a new car."</p>
+                        <hr>
+                        <p><span class="badge bg-success">Positive</span></p>
+                        <small class="text-muted">Vehicle: Toyota Camry (2022)</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Anish Tân</h5>
+                        <p class="card-text">"Great experience, the price was fair and the process was smooth. Will come back again!"</p>
+                        <hr>
+                        <p><span class="badge bg-success">Positive</span></p>
+                        <small class="text-muted">Vehicle: Honda Civic (2023)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
