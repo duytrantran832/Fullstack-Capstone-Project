@@ -1,0 +1,2 @@
+curl http://127.0.0.1:8000/djangoapp/get_dealers/Kansas
+[{"id": 3, "city": "Wichita", "state": "Kansas", "st": "KS", "address": "123 Maple Street", "zip": "67201", "lat": 37.6889, "long": -97.3361, "short_name": "KansasCar", "full_name": "Kansas Car Dealership"}]
