@@ -1,2 +1,3 @@
-curl http://127.0.0.1:8000/djangoapp/get_reviews/1
+curl -X GET http://127.0.0.1:8000/fetchReviews/dealer/1
+
 [{"id": 1, "name": "Berkly Ryan", "dealership": 1, "review": "Excellent service and friendly staff!", "purchase": true, "purchase_date": "02/11/2023", "car_make": "Toyota", "car_model": "Camry", "car_year": 2022, "sentiment": "positive"}]
