@@ -1,0 +1,24 @@
+Set up job
+Run actions/checkout@v3
+Run actions/setup-python@v4
+  Successfully setup CPython (3.9.13)
+Run Install dependencies
+  pip install --upgrade pip
+  pip install -r requirements.txt
+  Successfully installed django-3.1.3 flake8 pylint
+Run Lint with flake8
+  flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+  0
+Run Django tests
+  python manage.py test
+  Creating test database for alias 'default'...
+  System check identified no issues (0 silenced).
+  ...
+  ----------------------------------------------------------------------
+  Ran 3 tests in 0.045s
+  OK
+  Destroying test database for alias 'default'...
+Post Run actions/setup-python@v4
+Post Run actions/checkout@v3
+Complete job
+Job 'build' completed successfully.
