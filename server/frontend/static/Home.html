@@ -2,51 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dealer Details & Reviews</title>
+    <title>Post Review - Dealerships</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bcd4;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Dealerships</a>
-        </div>
+<body style="background-color: #f8f9fa;">
+    <nav class="navbar navbar-dark bg-info shadow-sm">
+        <div class="container-fluid"><a class="navbar-brand" href="/">Dealerships</a></div>
     </nav>
 
     <div class="container mt-5">
-        <div class="card mb-4 border-info">
-            <div class="card-header bg-info text-white">
-                <h3 class="mb-0">Holdlamis Car Dealership</h3>
-            </div>
-            <div class="card-body">
-                <p class="mb-1"><strong>Address:</strong> 30776 Old Shore Court, El Paso, Texas</p>
-                <p><strong>Zip Code:</strong> 79936</p>
-            </div>
-        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="mb-4">Post a Review for Holdlamis Car Dealership</h2>
+                
+                <div class="card p-4 shadow-sm border-0">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Enter the review content:</strong></label>
+                            <textarea class="form-control" rows="3" placeholder="Write your review here...">This was a fantastic experience! The staff was very helpful and the car selection was great. Highly recommend this dealer.</textarea>
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="purchaseCheck" checked>
+                            <label class="form-check-label" for="purchaseCheck">Has purchased a car from this dealer?</label>
+                        </div>
 
-        <h4 class="mb-3 text-primary">Customer Reviews</h4>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Berkly Ryan</h5>
-                        <p class="card-text italic">"Excellent service and friendly staff! Highly recommended for anyone looking for a new car."</p>
-                        <hr>
-                        <p><span class="badge bg-success">Positive</span></p>
-                        <small class="text-muted">Vehicle: Toyota Camry (2022)</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                <div class="card shadow-sm mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-success">Anish Tân</h5>
-                        <p class="card-text">"Great experience, the price was fair and the process was smooth. Will come back again!"</p>
-                        <hr>
-                        <p><span class="badge bg-success">Positive</span></p>
-                        <small class="text-muted">Vehicle: Honda Civic (2023)</small>
-                    </div>
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Select Car (Make-Model-Year):</strong></label>
+                            <select class="form-select">
+                                <option selected>Toyota-Camry-2022</option>
+                                <option>Honda-Civic-2023</option>
+                                <option>Ford-F150-2021</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Select Date:</strong></label>
+                            <input type="date" class="form-control" value="2026-04-05">
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-primary px-4">Post Review</button>
+                            <a href="#" class="btn btn-outline-secondary ms-2">Cancel</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
