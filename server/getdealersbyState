@@ -1,2 +1,3 @@
-curl http://127.0.0.1:8000/djangoapp/get_dealers/Kansas
-[{"id": 3, "city": "Wichita", "state": "Kansas", "st": "KS", "address": "123 Maple Street", "zip": "67201", "lat": 37.6889, "long": -97.3361, "short_name": "KansasCar", "full_name": "Kansas Car Dealership"}]
+curl -X GET http://127.0.0.1:8000/fetchDealers/Kansas
+
+[{"id": 16, "city": "Topeka", "state": "Kansas", "st": "KS", "address": "222 Wheat", "zip": "66603", "lat": 39.0473, "long": -95.6752, "short_name": "Sunflower", "full_name": "Sunflower Dealership"}]
